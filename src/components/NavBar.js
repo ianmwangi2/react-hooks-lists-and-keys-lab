@@ -1,18 +1,14 @@
+import React from "react";
 
-import React from 'react';
-
-const NavBar = () => {
+function NavBar() {
   const links = ["home", "about", "projects"];
 
   return (
     <nav>
-       {links.map((link) => (
-        <a  key={link} href={`#${link} `}>
-          {link}
-        </a>
-      ))}
+    {links.map((link)=> 
+    <a key={link} href={`#${link}`}>{link}</a>)}
     </nav>
-  );
-};
+    );
+}
 
 export default NavBar;
